@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <script src="ScriptCalculadora.js"></script>
+        <link rel="stylesheet" href="estiloCalculadora.css">
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="main">
+            <form name="form">
+                <input class="textview" name="textview" value=0>
+            </form>
+            <table>
+                <tr>
+                    <td><input class ="button" type="button" value="C" onclick="clean()"></td>
+                    <td><input class ="button" type="button" value="&larr;" onclick="back()"></td>
+                    <td><input class ="button" type="button" value="X" onclick="inserir('*')"></td>
+                    <td><input class ="button" type="button" value="&#x2797;" onclick="inserir('/')"></td>
+                </tr>
+                <tr>
+                    <td><input class ="button" type="button" value="1" onclick="inserir(1)"></td>
+                    <td><input class ="button" type="button" value="2" onclick="inserir(2)"></td>
+                    <td><input class ="button" type="button" value="3" onclick="inserir(3)"></td>
+                    <td><input class ="button" type="button" value="-" onclick="inserir('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class ="button" type="button" value="4" onclick="inserir(4)"></td>
+                    <td><input class ="button" type="button" value="5" onclick="inserir(5)"></td>
+                    <td><input class ="button" type="button" value="6" onclick="inserir(6)"></td>
+                    <td><input class ="button" type="button" value="+" onclick="inserir('+')"></td>
+                </tr>
+                <tr>
+                    <td><input class ="button" type="button" value="7" onclick="inserir(7)"></td>
+                    <td><input class ="button" type="button" value="8" onclick="inserir(8)"></td>
+                    <td><input class ="button" type="button" value="9" onclick="inserir(9)"></td>
+                    <td rowspan=5><input class ="button" style="height:106" type="button" value="=" onclick="equal()"></td>
+                </tr>
+                <tr>
+                    <td colspan=2><input class ="button" style="width:106" type="button" value="0" onclick="inserir(0)"></td>
+                    <td><input class ="button" type="button" value="." onclick="inserir('.')"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </body>
+</html>
